@@ -1,65 +1,53 @@
 import Image from "next/image";
+import Slider from "./components/slider/page";
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+  <>
+  <Slider/>
+
+  <div className="w-full p-3 text-center bg-amber-50">
+    <h1 style={{color:"brown",fontWeight:"800",fontSize:"30px"}}>Admission Closed 2025</h1>
+  </div>
+
+  {/* banner section */}
+  <div className="w-full">
+    <img src="/images/teachers.jpg"className="w-full h-auto"/>
+  </div>
+
+  {/*School management*/}
+  <div className="w-full text-center p-5 bg-amber-50">
+    <h1 style={{fontWeight:"800",fontSize:"40px",color:"brown"}}>School management</h1>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 bg-amber-50">
+    <div><img src="/images/bishop.jpg"className=" border-2 border-gray-500 shadow shadow-green-500 mx-auto block mt-3"/>
+     <h3 className="text-green-600 mt-3 mx-auto block "style={{marginLeft:"60px",fontWeight:"700",textDecoration:"underline"}}>𝓐𝓻𝔂𝓪𝓷 𝓼𝓻𝓲𝓿𝓪𝓼𝓽𝓪𝓿</h3>
     </div>
+
+     <div><img src="/images/bishop.jpg"className=" border-2 border-gray-500 shadow shadow-green-500 mx-auto block mt-3"/>
+     <h3 className="text-green-600 mt-3 mx-auto block"style={{marginLeft:"60px", fontWeight:"700",textDecoration:"underline"}}>𝓐𝓻𝔂𝓪𝓷 𝓼𝓻𝓲𝓿𝓪𝓼𝓽𝓪𝓿</h3>
+    </div>
+
+    <div><img src="/images/bishop.jpg"className=" border-2 border-gray-500 shadow shadow-green-500 mx-auto block mt-3"/>
+     <h3 className="text-green-600 mt-3 mx-auto block"style={{marginLeft:"60px", fontWeight:"700",textDecoration:"underline"}}>𝓐𝓻𝔂𝓪𝓷 𝓼𝓻𝓲𝓿𝓪𝓼𝓽𝓪𝓿</h3>
+    </div>
+
+    <div><img src="/images/bishop.jpg"className=" border-2 border-gray-500 shadow shadow-green-500 mx-auto block mt-3"/>
+     <h3 className="text-green-600 mt-3 mx-auto block"style={{ marginLeft:"60px",fontWeight:"700",textDecoration:"underline"}}>𝓐𝓻𝔂𝓪𝓷 𝓼𝓻𝓲𝓿𝓪𝓼𝓽𝓪𝓿</h3>
+    </div>
+  </div>
+
+  {/*principal message*/}
+  <div className="w-full p-5 bg-amber-50 text-center justify-center">
+     <h1 style={{color:"brown",fontWeight:"800",fontSize:"40px"}}>Principal Message...</h1>
+
+     <img src="/images/principal.jpeg"className="m-5 mx-auto block"/>
+
+     <p className="text-black">A school principal is the head leader and administrator responsible for a school's overall operation, including setting academic goals, </p>
+     <p className="text-black">managing staff, overseeing daily activities, ensuring student safety, and acting as the public representative for the institution. They create</p>
+      <p className="text-black">a positive learning environment, mentor teachers, manage budgets, and implement district/state policies, requiring strong leadership, communication, and problem-solving skills. </p>
+  </div>
+ </>
   );
 }
